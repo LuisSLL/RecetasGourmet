@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recetario | Chef</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Recetario</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorías</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Pastas</a></li>
+                            <li><a class="dropdown-item" href="#">Carnes</a></li>
+                            <li><a class="dropdown-item" href="#">Postres</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5 bg-light text-center d-flex align-items-center" style="min-height:85vh;">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Bienvenido a mi recetario</h1>
+            <p class="lead">Una colección de mis recetas favoritas mientras curso para Chef</p>
+            <a href="#recetas" class="btn btn-primary btn-lg">Ver recetas</a>
+        </div>
+    </section>
+
+    <section class="py-5" id="recetas">
+        <div class="container">
+            <h2 class="mb-4">Recetas destacadas</h2>
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/400x250?text=Pasta+Carbonara" class="card-img-top" alt="Receta 1" />
+                        <div class="card-body">
+                            <h5 class="card-title">Pasta Carbonara</h5>
+                            <p class="card-text">Una receta clásica italiana con pocos ingredientes y mucho sabor.</p>
+                            <a href="#" class="btn btn-outline-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/400x250?text=Asado+Argentino" class="card-img-top" alt="Receta 2" />
+                        <div class="card-body">
+                            <h5 class="card-title">Asado Argentino</h5>
+                            <p class="card-text">El clásico asado con técnica tradicional y tips para lograr el punto perfecto.</p>
+                            <a href="#" class="btn btn-outline-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/400x250?text=Tiramisu" class="card-img-top" alt="Receta 3" />
+                        <div class="card-body">
+                            <h5 class="card-title">Tiramisú</h5>
+                            <p class="card-text">Postre italiano clásico, suave, dulce y perfecto para cualquier ocasión.</p>
+                            <a href="#" class="btn btn-outline-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/400x250?text=Zapallitos+Rellenos" class="card-img-top" alt="Receta de Zapallitos Rellenos" />
+                        <div class="card-body">
+                            <h5 class="card-title">Zapallitos Rellenos</h5>
+                            <p class="card-text">Receta clásica y nutritiva con carne molida y queso sardo, ideal para principiantes.</p>
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalZapallitos">
+                                Ver Receta
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/400x250?text=Lomo+Strogonoff" class="card-img-top" alt="Receta de Lomo Strogonoff" />
+                        <div class="card-body">
+                            <h5 class="card-title">Lomo Strogonoff con Arroz Pilaf</h5>
+                            <p class="card-text">Un plato emblemático, cremoso y con un toque de coñac para elevar el sabor.</p>
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalStrogonoff">
+                                Ver Receta
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Recetario Chef</h6>
+                    <p>
+                        Una colección de recetas para compartir la pasión por la cocina.
+                    </p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Enlaces
+                    </h6>
+                    <p><a href="#!" class="text-white text-decoration-none">Inicio</a></p>
+                    <p><a href="#recetas" class="text-white text-decoration-none">Recetas</a></p>
+                    <p><a href="#!" class="text-white text-decoration-none">Términos de Uso</a></p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                    <p><i class="fas fa-home me-3"></i> Mi Ciudad, Mi País</p>
+                    <p>
+                        <i class="fas fa-envelope me-3"></i>
+                        info@ejemplo.com
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2025 Derechos Reservados:
+            <a class="text-white" href="#">RecetarioChef</a>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="modalZapallitos" tabindex="-1" aria-labelledby="modalZapallitosLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalZapallitosLabel">Zapallitos Rellenos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6><i class="fas fa-list-alt me-2"></i>Ingredientes</h6>
+                            <ul>
+                                <li>**Zapallitos verdes:** 2 unidades</li>
+                                <li>**Carne molida:** 150 gr</li>
+                                <li>**Ajo:** 1 diente (corte en *brunoise*)</li>
+                                <li>**Cebolla:** 1 unidad (corte en *brunoise*)</li>
+                                <li>**Morrón rojo:** 1/2 unidad (corte en *brunoise*)</li>
+                                <li>**Queso sardo:** 25 gr (rallado)</li>
+                                <li>**Perejil fresco:** A gusto</li>
+                                <li>**Sal y pimienta:** A gusto</li>
+                                <li>**Aceite de oliva:** C/N (Cantidad Necesaria)</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6><i class="fas fa-utensils me-2"></i>Procedimiento</h6>
+                            <ol>
+                                <li>Cortar la base y luego quitar la parte superior del zapallito. Con una cuchara retirar el interior, de manera que quede hueco.</li>
+                                <li>Cocinar los zapallitos huecos en **agua hirviendo con sal durante 4 minutos**. Retirarlos, pasarlos por agua fría, y luego dejarlos escurrir sobre papel absorbente.</li>
+                            </ol>
+                            <h6><i class="fas fa-box-open me-2"></i>Armado</h6>
+                            <ol start="3">
+                                <li>Preparar el relleno: en una sartén caliente con aceite **dorar la carne picada**.</li>
+                                <li>Incorporar el ajo picado y la cebolla. Condimentar con sal y pimienta.</li>
+                                <li>Añadir el morrón y el perejil picado, mezclando a medida que se incorporan los ingredientes.</li>
+                                <li>Rociar con aceite una fuente para horno, acomodar los zapallitos e **incorporar el relleno**.</li>
+                                <li>Por último, cubrir con queso rallado.</li>
+                                <li>Cocinar en **horno pre calentado a 180°C durante 10 minutos**.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalStrogonoff" tabindex="-1" aria-labelledby="modalStrogonoffLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalStrogonoffLabel">Lomo Strogonoff con Arroz Pilaf</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6><i class="fas fa-list-alt me-2"></i>Ingredientes Lomo Strogonoff</h6>
+                            <ul>
+                                <li>**Lomo:** 250 gr</li>
+                                <li>**Manteca:** 15 gr</li>
+                                <li>**Aceite de oliva:** C/N</li>
+                                <li>**Coñac:** 3 cdas</li>
+                                <li>**Cebolla:** 1 unidad</li>
+                                <li>**Champiñones:** 100 gr</li>
+                                <li>**Pimentón:** 1 cdita</li>
+                                <li>**Azúcar:** 1 cdita</li>
+                                <li>**Caldo de carne:** 200 cc</li>
+                                <li>**Crema de leche:** 100</li>
+                                <li>**Perejil y estragón:** 1 cdita</li>
+                                <li>**Sal y pimienta:** A gusto</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6><i class="fas fa-list-alt me-2"></i>Ingredientes Arroz Pilaf</h6>
+                            <ul>
+                                <li>**Manteca:** 25 gr</li>
+                                <li>**Aceite de oliva:** 1 cda</li>
+                                <li>**Ajo:** 1 diente</li>
+                                <li>**Caldo:** C/N</li>
+                                <li>**Arroz:** 100 gr</li>
+                                <li>**Queso sardo:** (Para rallar)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h6 class="mt-4"><i class="fas fa-utensils me-2"></i>Procedimiento</h6>
+                    <p class="fw-bold">Para el Lomo Strogonoff:</p>
+                    <ol>
+                        <li>Cortar el lomo en bifes a lo largo en dirección transversal a la carne, luego cortar los bifes en **bastones**.</li>
+                        <li>Condimentar con sal y pimienta. Saltearlo a fuego fuerte en la mitad de la manteca y el aceite, y **flamear con el coñac**.</li>
+                        <li>Aparte, rehogar la cebolla en el resto de la manteca y el aceite, incorporar los champiñones. Condimentar con sal, pimentón y añadir el caldo.</li>
+                        <li>Cocinar unos minutos y agregar la carne, la crema de leche, el perejil y el estragón. Calentar y servir.</li>
+                    </ol>
+
+                    <p class="fw-bold mt-4">Para el Arroz Pilaf:</p>
+                    <ol start="5">
+                        <li>Dorar en la manteca y el aceite el diente de ajo entero, retirarlo y **añadir el arroz**.</li>
+                        <li>Saltearlo hasta que los granos se tornen **transparente** (nacaren).</li>
+                        <li>Agregar el **caldo hirviendo**, mezclar y tapar.</li>
+                        <li>Cocinar durante **15 minutos**, aproximadamente.</li>
+                        <li>Dejar reposar dos minutos y distribuir por encima trocitos de manteca. Mezclar.</li>
+                        <li>Añadir el queso sardo rallado.</li>
+                        <li>Servir y acompañarlo con el lomo strogonoff.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
